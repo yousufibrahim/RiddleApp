@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="getRandomJoke()">
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Riddles</h1>
+        <p class="lead">Welcome to the Riddle App</p>
+        <hr class="my-4">
+        <h3 id="riddle"></h3>
+        <p id="answer"></p>
+        <button class="btn btn-primary" onclick="getRandomJoke()">Get Riddle</button>
+        <a href="add-riddle.html" class="btn btn-success">Add Riddle</a>
+        <a href="riddle-list.html" class="btn btn-info">View Riddles</a>
+    </div>
+
+<script src="scripts.js"></script>
+
+<footer>
+    <center>
+        <p><font color="white" &copy; 2024 Riddle App</p>
+    </center>
+</footer>
+</body>
+</html>
