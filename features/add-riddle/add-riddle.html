@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add a Riddle</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container"> 
         <h1>Add a Riddle</h1>
-        <form id="add-riddle-form">
+        <form id="add-riddle-form" action="/riddles" method="POST"> <!--REST API - POST method-->
             <div class="form-group">
                 <label for="riddle">Riddle</label>
                 <input type="text" class="form-control" id="riddle" name="riddle" required>
@@ -18,13 +16,13 @@
                 <label for="answer">Answer</label>
                 <input type="text" class="form-control" id="answer" name="answer" required>
             </div> 
-            <button type="submit" class="btn btn-primary">Add Riddle</button>
+            <button type="submit" class="btn btn-primary">Add Riddle</button> <!--Button sends POST call to our API server-->
         </form>
     </div>
     <br>
     <br>
     <div class="container">
-        <center><a href="index.html" class="btn btn-primary">Back to Home</a>></center>
+        <center><a href="index.html" class="btn btn-primary">Back to Home</a></center>
     </div>
 
     <script src="scripts.js"></script>
@@ -32,7 +30,7 @@
     <br>
     <br>
     <footer>
-        <center><p>&copy; 2024 RiddleApp</p></center>
+        <p><font color="white"> &copy; Yusuf Ibrahim - 2024 Riddle App</font></p>
     </footer>
 </body>
 </html>
